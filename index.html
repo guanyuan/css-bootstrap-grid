@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/tooday.css">
+
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="tooday.js"></script>
+
+    <title>Tooday home page</title>
+</head>
+
+<body ng-app="myApp">
+
+    <div class="row">
+        <ul class="sidebar-left col-xs-1">
+            <div class="logo">
+                <img src="./assets/images/fit_logo.120x120.png" alt="">
+            </div>
+            <div class="home">
+                <i class="fa fa-home "></i>
+            </div>
+
+        </ul>
+
+        <ul class="content col-xs-10" ng-controller="postCtrl">
+            <li class="post col-xs-3" ng-repeat="post in posts track by $index">
+                <div class="post-pic">
+                    <a href="">
+                    <img ng-src="{{post.image}}"/> 
+                    </a>
+
+                </div>
+                <div class="post-info container-fluid">
+                    <span class="glyphicon glyphicon-{{post.icon}} col-xs-2"></span>
+                    <span class="author-time col-xs-10">
+                        <a>{{post.author}}</a>
+                        //{{post.time}}
+                    </span>
+                </div>
+                <div class="post-title">
+                    <b>{{post.title}}</b>
+                </div>
+                <div class="post-tag">
+                    <i class="fa fa-map-marker"></i>
+                    <b>{{post.location}}  <a>{{post.tag}}</a></b>
+                </div>
+            </li>
+
+        </ul>
+        <div class="sidebar-right col-xs-1">
+
+        </div>
+
+        <div ng-view></div>
+    </div>
+
+</html>
