@@ -18,13 +18,30 @@ body {
     padding-left: 15px;
 }
 
-.sidebar-left img {
+.sidebar-left * {
     width: 100%;
 }
 
-.sidebar-left .home {
-    line-height: 67px;
+.sidebar-left a {
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+    font-size: 12px;
     border-bottom: 1px solid;
+}
+
+.sidebar-left a:hover {
+    color: white;
+    background-color: #ccc6b8;
+}
+
+.sidebar-left .blank {
+    height: 360px;
+}
+
+.sidebar-left .reply a {
+    border-bottom: none;
 }
 
 .content {
@@ -80,4 +97,13 @@ body {
     padding-right: 12px;
     padding: 10px 12px 10px 0;
     font-size: 12px;
+}
+
+.sidebar-right {
+    list-style: none;
+    background-color: blue;
+}
+
+.sidebar-right .cloth .fit-icon-cloth {
+    background: transparent url("../images/icon-all.png") -28px -38px no-repeat;
 }

@@ -7,7 +7,7 @@ var serve = require('gulp-serve');
 
 var scssFile = './sass/**/*.scss';
 var scssFolder = './sass';
-var htmlFile = './tooday.html';
+var htmlFile = './index.html';
 var cssFolder = './assets/css';
 
 gulp.task('clean-css', function() {

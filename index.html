@@ -10,22 +10,48 @@
 
     <script src="http://localhost:35729/livereload.js"></script>
     <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="tooday.js"></script>
 
     <title>Tooday home page</title>
 </head>
 
 <body ng-app="myApp">
-
     <div class="row">
         <ul class="sidebar-left col-xs-1">
-            <div class="logo">
+            <li class="logo">
                 <img src="./assets/images/fit_logo.120x120.png" alt="">
-            </div>
-            <div class="home">
-                <i class="fa fa-home "></i>
-            </div>
+            </li>
+            <li class="home">
+                <a>
+                    <i class="fa fa-home "></i>
+                    <div class="text">首页</div>
+                </a>
+
+            </li>
+            <li class="search">
+                <a>
+                    <i class="fa fa-search"></i>
+                    <div class="text">搜索</div>
+                </a>
+
+            </li>
+            <li class="blank">
+
+            </li>
+
+            <li class="user">
+                <a><i class="fa fa-user"></i></a>
+
+            </li>
+            <li class="info">
+                <a><i class="fa fa-info-sign"></i></a>
+            </li>
+            <li class="reply">
+                <a>
+                    <i class="fa fa-reply"></i>
+                    <div class="text" ng-class="red">回到主页</div>
+                </a>
+            </li>
 
         </ul>
 
@@ -33,7 +59,7 @@
             <li class="post col-xs-3" ng-repeat="post in posts track by $index">
                 <div class="post-pic">
                     <a href="">
-                    <img ng-src="{{post.image}}"/> 
+                        <img ng-src="{{post.image}}" />
                     </a>
 
                 </div>
@@ -54,11 +80,9 @@
             </li>
 
         </ul>
-        <div class="sidebar-right col-xs-1">
-
-        </div>
-
-        <div ng-view></div>
+        <ul class="sidebar-right col-xs-1">
+            
+        </ul>
     </div>
 
 </html>

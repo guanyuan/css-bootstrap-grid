@@ -13,12 +13,28 @@ body {
     text-align: center;
     list-style: none;
     padding-left: 15px;
-    img {
+    * {
         width: 100%;
     }
-    .home {
-        line-height: 67px;
+    a {
+        display: inline-block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        cursor: pointer;
+        font-size: 12px;
         border-bottom: 1px solid;
+        &:hover {
+            color: white;
+            background-color: #ccc6b8;
+        }
+    }
+    .blank {
+        height: 360px;
+    }
+    .reply {
+        a {
+            border-bottom: none;
+        }
     }
 }
 .content {
@@ -69,4 +85,14 @@ body {
             font-size: 12px;
         }
     }
+}
+.sidebar-right {
+    list-style: none;
+    background-color: blue;
+    .cloth {
+        .fit-icon-cloth {
+        background: transparent url("../images/icon-all.png") -28px -38px no-repeat;
+    }
+    }
+    
 }
