@@ -6,3 +6,13 @@ app.controller('postCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.posts = data;
     });
 }]);
+
+
+
+app.controller('iconsCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.icons = [];
+    $http.get('assets/data/icons-sidebar-left.json')
+        .success(function(data) {
+            $scope.icons = data;
+        });
+}]);

@@ -1,0 +1,30 @@
+[
+{
+    "name": "cloth",
+    "description": "服饰"
+}, 
+{
+    "name": "bag",
+    "description": "包装"
+},
+{
+    "name": "shoes",
+    "description": "鞋履"
+},
+{
+    "name": "watch",
+    "description": "腕表"
+}, 
+{
+    "name": "skin",
+    "description": "护肤美妆"
+}, 
+{
+    "name": "wear",
+    "description": "智能穿戴"
+},
+{
+    "name": "circle",
+    "description": "圈子"
+}
+]
