@@ -38,3 +38,14 @@
 .fa-reply:before {
     content: "\f112";
 }
+
+.fit {
+    display: inline-block;
+    background-image: url("../images/icon-all.png");
+    height: 20px;
+    width: 20px;
+}
+
+.fit-icon-cloth {
+    background-position: -60px -56px;
+}

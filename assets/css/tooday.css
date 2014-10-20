@@ -8,21 +8,20 @@ body {
     color: #969696;
 }
 
+body ul {
+    margin: 0px;
+}
+
 .glyphicon {
     display: inline-block;
 }
 
-.sidebar-left {
-    text-align: center;
-    list-style: none;
-    padding-left: 15px;
+.sidebar-left, .sidebar-right {
+    position: fixed;
 }
 
-.sidebar-left * {
+.sidebar-left a, .sidebar-right a {
     width: 100%;
-}
-
-.sidebar-left a {
     display: inline-block;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -31,13 +30,24 @@ body {
     border-bottom: 1px solid;
 }
 
-.sidebar-left a:hover {
+.sidebar-left a:hover, .sidebar-right a:hover {
     color: white;
     background-color: #ccc6b8;
 }
 
+.sidebar-left {
+    background-color: pink;
+    padding-right: 0px;
+    text-align: center;
+    list-style: none;
+}
+
+.sidebar-left img {
+    width: 100%;
+}
+
 .sidebar-left .blank {
-    height: 360px;
+    height: 310px;
 }
 
 .sidebar-left .reply a {
@@ -46,17 +56,14 @@ body {
 
 .content {
     list-style-type: none;
-    padding-top: 20px;
+    padding: 20px 0px;
     background-color: gainsboro;
 }
 
 .content .post {
     background-color: gainsboro;
-    a: hover;
-    a-color: #f05a24;
     padding: 7.5px 7.5px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-radius: 3px;
 }
 
 .content .post * {
@@ -65,6 +72,16 @@ body {
 
 .content .post a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.content .post a:hover {
+    color: #f05a24;
+}
+
+.content .post .post-pic {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .content .post .post-pic img {
@@ -77,6 +94,11 @@ body {
     padding: 5px 0 2px 0;
     text-align: right;
     border-bottom: 1px solid;
+}
+
+.content .post .post-info span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .content .post .post-info .author-time {
@@ -100,10 +122,14 @@ body {
 }
 
 .sidebar-right {
+    background-color: orange;
+    right: 0px;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 12px;
     list-style: none;
-    background-color: blue;
 }
 
-.sidebar-right .cloth .fit-icon-cloth {
-    background: transparent url("../images/icon-all.png") -28px -38px no-repeat;
+.sidebar-right li {
+    width: 100%;
 }

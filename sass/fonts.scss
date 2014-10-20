@@ -1,39 +1,43 @@
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 .fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
 .fa-map-marker:before {
-  content: "\f041";
+    content: "\f041";
 }
-
 .fa-home:before {
-  content: "\f015";
+    content: "\f015";
 }
-
 .fa-search:before {
-content: "\f002";
+    content: "\f002";
 }
-
 .fa-user:before {
-content: "\f007";
+    content: "\f007";
 }
-
 .fa-info-sign:before {
-content: "\f05a";
+    content: "\f05a";
 }
-
 .fa-reply:before {
-content: "\f112";
+    content: "\f112";
+}
+.fit {
+  display: inline-block;
+    background-image: url("../images/icon-all.png");
+    height: 20px;
+    width: 20px;
+}
+.fit-icon-cloth {
+    // background: transparent url("../images/icon-all.png") -28px -38px no-repeat;
+    background-position: -60px -56px;
 }
