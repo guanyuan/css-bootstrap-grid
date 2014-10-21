@@ -9,13 +9,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/tooday.css">
 
     <script src="http://localhost:35729/livereload.js"></script>
+    <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="tooday.js"></script>
 
     <title>Tooday home page</title>
 </head>
 
-<body ng-app="myApp">
+<body class="container-fluid" ng-app="myApp">
     <div class="row">
         <ul class="sidebar-left col-xs-1">
             <li class="logo">
@@ -23,7 +24,7 @@
             </li>
             <li class="home">
                 <a>
-                    <i class="fa fa-home "></i>
+                    <i class="fa fa-home"></i>
                     <div class="text">首页</div>
                 </a>
 
@@ -35,16 +36,21 @@
                 </a>
 
             </li>
-            <li class="blank">
+            <li class="blank test">
 
             </li>
 
             <li class="user">
                 <a><i class="fa fa-user"></i></a>
-
+                <ul class="login-register">
+                    <li class="login"><a>登录</a></li>
+                    <li class="register"> <a>注册</a></li>
+                </ul>
             </li>
+            
             <li class="info">
                 <a><i class="fa fa-info-sign"></i></a>
+                <a class="about">关于fit</a>
             </li>
             <li class="reply">
                 <a>
@@ -55,16 +61,14 @@
 
         </ul>
 
-
         <div class="content col-xs-10">
+        <div class="container-fluid">
             <ul class="row" ng-controller="postCtrl">
-
-                <li class="post col-xs-3" ng-repeat="post in posts track by $index">
+                <li class="post col-xs-10 col-sm-6 col-md-3" ng-repeat="post in posts track by $index">
                     <div class="post-pic">
                         <a>
                             <img ng-src="{{post.image}}" />
                         </a>
-
                     </div>
                     <div class="other">
                         <div class="post-info row">
@@ -85,11 +89,9 @@
                         </div>
                     </div>
                 </li>
-
-
             </ul>
         </div>
-
+        </div>
 
         <ul class="sidebar-right col-xs-1" ng-controller="iconsCtrl">
             <li class="cloth" ng-repeat="icon in icons track by $index">
@@ -99,8 +101,6 @@
                 </a>
             </li>
         </ul>
-
-        
     </div>
-
+</body>
 </html>

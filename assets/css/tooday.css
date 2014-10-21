@@ -3,16 +3,26 @@
     color: #969696;
 }
 
+a {
+    color: #969696;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f05a24;
+}
+
 ul {
     list-style: none;
     padding: 0px;
 }
 
 .sidebar-left, .sidebar-right {
+    padding: 0px;
     text-align: center;
 }
 
-.sidebar-left li, .sidebar-right li {
+.sidebar-left > li, .sidebar-right > li {
     height: 100px;
     padding-top: 20px;
     border-bottom: 1px solid;
@@ -20,12 +30,39 @@ ul {
 
 .sidebar-left li:hover, .sidebar-right li:hover {
     cursor: pointer;
-    color: white;
     background-color: #ccc6b8;
 }
 
-.sidebar-left {
-    padding-right: 0px;
+.sidebar-left li:hover a *, .sidebar-right li:hover a * {
+    color: white;
+}
+
+.sidebar-left li:hover .fit-icon-cloth, .sidebar-right li:hover .fit-icon-cloth {
+    background-position: -135px -56px;
+}
+
+.sidebar-left li:hover .fit-icon-bag, .sidebar-right li:hover .fit-icon-bag {
+    background-position: -135px -135px;
+}
+
+.sidebar-left li:hover .fit-icon-shoes, .sidebar-right li:hover .fit-icon-shoes {
+    background-position: -135px -213px;
+}
+
+.sidebar-left li:hover .fit-icon-watch, .sidebar-right li:hover .fit-icon-watch {
+    background-position: -135px -286px;
+}
+
+.sidebar-left li:hover .fit-icon-skin, .sidebar-right li:hover .fit-icon-skin {
+    background-position: -135px -360px;
+}
+
+.sidebar-left li:hover .fit-icon-wear, .sidebar-right li:hover .fit-icon-wear {
+    background-position: -135px -437px;
+}
+
+.sidebar-left li:hover .fit-icon-circle, .sidebar-right li:hover .fit-icon-circle {
+    background-position: -135px -513px;
 }
 
 .sidebar-left .logo {
@@ -41,8 +78,61 @@ ul {
     height: 260px;
 }
 
-.sidebar-right {
-    padding-left: 0px;
+.sidebar-left .user, .sidebar-left .info {
+    height: 40px;
+    padding-top: 10px;
+}
+
+.sidebar-left .user:hover {
+    background-color: white;
+}
+
+.sidebar-left .user:hover .fa-user {
+    display: none;
+}
+
+.sidebar-left .user:hover .login-register {
+    display: block;
+    margin-top: -10px;
+    line-height: 40px;
+}
+
+.sidebar-left .user:hover .login-register li {
+    display: inline-block;
+    width: 48%;
+}
+
+.sidebar-left .user:hover .login-register li a:hover {
+    color: white;
+}
+
+.sidebar-left .user .login-register {
+    display: none;
+}
+
+.sidebar-left .user .login-register > li {
+    padding-left: 3px;
+    padding-right: 3px;
+    display: inline-block;
+    height: 100%;
+}
+
+.sidebar-left .user .login-register > li:hover {
+    background-color: #ccc6b8;
+    color: white;
+}
+
+.sidebar-left .info .about {
+    display: none;
+}
+
+.sidebar-left .info:hover .fa-info-sign {
+    display: none;
+}
+
+.sidebar-left .info:hover .about {
+    display: inline-block;
+    color: white;
 }
 
 .content {
@@ -55,7 +145,12 @@ ul {
 .content .post {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.content .post:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .content .post img {
