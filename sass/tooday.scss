@@ -17,6 +17,7 @@ ul {
 
 
 .sidebar-left, .sidebar-right {
+    position: fixed;
     padding: 0px;
     text-align: center;
     &> li {
@@ -54,6 +55,7 @@ ul {
     }
 }
 .sidebar-left {
+    left: 0px;
     .logo {
         padding-top: 0px;
     }
@@ -117,6 +119,10 @@ ul {
         }
     }
 }
+.sidebar-right {
+    right: 0px;
+}
+
 .content {
     padding-top: 20px;
     padding-left: 120px;

@@ -18,6 +18,7 @@ ul {
 }
 
 .sidebar-left, .sidebar-right {
+    position: fixed;
     padding: 0px;
     text-align: center;
 }
@@ -63,6 +64,10 @@ ul {
 
 .sidebar-left li:hover .fit-icon-circle, .sidebar-right li:hover .fit-icon-circle {
     background-position: -135px -513px;
+}
+
+.sidebar-left {
+    left: 0px;
 }
 
 .sidebar-left .logo {
@@ -133,6 +138,10 @@ ul {
 .sidebar-left .info:hover .about {
     display: inline-block;
     color: white;
+}
+
+.sidebar-right {
+    right: 0px;
 }
 
 .content {
