@@ -58,6 +58,9 @@ ul {
 .sidebar-left {
     height: 100%;
     left: 0px;
+    & > li {
+        width: 100%;
+    }
     .logo {
         padding-top: 0px;
     }
@@ -73,6 +76,8 @@ ul {
         padding-top: 10px;
     }
     .user {
+        position: absolute;
+        bottom: 140px;
         &:hover {
             .fa-user {
                 display: none;
@@ -107,6 +112,8 @@ ul {
         }
     }
     .info {
+        position: absolute;
+        bottom: 100px;
         .about {
             display: none;
         }
@@ -124,6 +131,7 @@ ul {
     .reply {
         position: absolute;
         bottom:0;
+        background-color: #f0f0f0;
     }
 }
 .sidebar-right {

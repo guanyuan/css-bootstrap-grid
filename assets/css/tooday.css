@@ -72,6 +72,10 @@ ul {
     left: 0px;
 }
 
+.sidebar-left > li {
+    width: 100%;
+}
+
 .sidebar-left .logo {
     padding-top: 0px;
 }
@@ -88,6 +92,11 @@ ul {
 .sidebar-left .user, .sidebar-left .info {
     height: 40px;
     padding-top: 10px;
+}
+
+.sidebar-left .user {
+    position: absolute;
+    bottom: 140px;
 }
 
 .sidebar-left .user:hover {
@@ -129,6 +138,11 @@ ul {
     color: white;
 }
 
+.sidebar-left .info {
+    position: absolute;
+    bottom: 100px;
+}
+
 .sidebar-left .info .about {
     display: none;
 }
@@ -145,6 +159,7 @@ ul {
 .sidebar-left .reply {
     position: absolute;
     bottom: 0;
+    background-color: #f0f0f0;
 }
 
 .sidebar-right {
