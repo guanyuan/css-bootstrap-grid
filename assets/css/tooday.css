@@ -26,8 +26,15 @@ ul {
 
 .sidebar-left > li, .sidebar-right > li {
     height: 100px;
-    padding-top: 20px;
     border-bottom: 1px solid;
+    position: relative;
+}
+
+.sidebar-left > li > a, .sidebar-right > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sidebar-left li:hover, .sidebar-right li:hover {
@@ -195,11 +202,6 @@ ul {
     width: 100%;
     text-align: right;
     border-bottom: 1px solid;
-}
-
-.content .post .post-info div {
-    vertical-align: bottom;
-    display: inline-block;
 }
 
 .content .post .post-title {
