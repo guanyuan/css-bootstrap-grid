@@ -68,6 +68,7 @@ ul {
 }
 
 .sidebar-left {
+    height: 100%;
     left: 0px;
 }
 
@@ -141,6 +142,11 @@ ul {
     color: white;
 }
 
+.sidebar-left .reply {
+    position: absolute;
+    bottom: 0;
+}
+
 .sidebar-right {
     right: 0px;
 }
@@ -188,6 +194,10 @@ ul {
 .content .post .post-title a {
     color: black;
     font-weight: bold;
+}
+
+.content .post .post-title a:hover {
+    color: #f05a24;
 }
 
 .content .post .post-tag {
